@@ -1,0 +1,33 @@
+*, *:after, *:before {
+  @include box-sizing(border-box);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  &:before {
+    @include media($palm) {
+      width: auto;
+      max-width: 100%;
+      margin: 0 30px;
+    }
+
+    @include media($tablet) {
+      width: auto;
+      max-width: 100%;
+      margin: 0 30px;
+    }
+
+    @include media($portable) {
+      width: auto;
+      max-width: 740px;
+    }
+
+    @include media($desktop) {
+      width: auto;
+      max-width: 960px;
+    }
+  }
+}

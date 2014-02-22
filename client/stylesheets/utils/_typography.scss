@@ -1,0 +1,43 @@
+body {
+  color: #1d1d1d;
+  font-family: $helvetica;
+  font-size: 12px;
+  line-height: 18px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, .u-h1 {
+  font-size: em(48);
+  line-height: 52px;
+}
+
+h2, .u-h2 {
+  font-size: em(32);
+  line-height: 48px;
+}
+
+h3, .u-h3 {}
+
+h4, .u-h4 {}
+
+h5, .u-h5 {}
+
+h6, .u-h6 {}
+
+p, .u-text {}
+
+blockquote, .u-quote {}
+
+code, .u-code {}
+
+pre, .u-code-block {
+  code {}
+}
+
+ul, .u-unordered-list {
+  li {}
+}
+
+ol, .u-ordered-list {
+  li {}
+}

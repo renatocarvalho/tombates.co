@@ -1,0 +1,10 @@
+.hero {
+  @include position(fixed, 0px 0px 0px 0px);
+}
+
+.hero__inner {
+  @include transform( translateX(-50%) translateY(-50%) );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
