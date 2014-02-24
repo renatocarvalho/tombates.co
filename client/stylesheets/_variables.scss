@@ -4,10 +4,22 @@
 $palm:                     new-breakpoint(max-width 480px 3);
 $tablet:                   new-breakpoint(min-width 481px max-width 768px 8);
 $portable:                 new-breakpoint(min-width 769px max-width 1024px 12);
-$desktop:                  new-breakpoint(min-width 1025px max-width 1280px 12);
+$desktop:                  new-breakpoint(min-width 1025px 12);
 
 $grid-columns:             12;
-$visual-grid:              true;
+$visual-grid:              false;
 $visual-grid-color:        rgba(0, 0, 0, 0.1);
 $max-width:                960px;
+/* ==================================== */
+
+/* ==================================== */
+$off-black:                #17222A;
+$mid-grey:                 tint($off-black, 40%);
+$red:                      #ef3f3f;
+$blue:                     #1900FF;
+/* ==================================== */
+
+
+/* ==================================== */
+$museo:                   $helvetica;
 /* ==================================== */

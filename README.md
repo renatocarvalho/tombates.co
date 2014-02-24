@@ -1,7 +1,5 @@
 # tombates.co
 
-**Prototyping space for the Ustwo site. Quick for building, etc**
-
 ## Running locally
 
 Install meteor.js

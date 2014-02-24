@@ -1,0 +1,40 @@
+.header,
+.header--pinned {
+  @include transition(top 0.25s ease-in-out);
+  background: #FFF;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  height: 70px;
+}
+
+.header--unpinned {
+  top: -70px;
+}
+
+.header__navigation {
+  @include clearfix;
+  margin: 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.header__navigation__item {
+  display: block;
+  float: left;
+  position: relative;
+
+  a {
+    display: block;
+    line-height: 70px;
+  }
+}
+
+.header__brand {
+  font-family: $helvetica;
+  font-weight: 400;
+  font-size: em(24);
+  text-transform: uppercase;
+}
