@@ -18,6 +18,17 @@ _.extend(Template.index, {
         }, 500);
       });
 
+      window.addEventListener('scroll', function(event) {
+        var hero = document.querySelector(".hero");
+
+        if (document.body.scrollTop > window.innerHeight) {
+          hero.classList.add("is-covered");
+        }
+        else if (document.body.scrollTop < window.innerHeight && hero.classList.contains("is-covered")) {
+          hero.classList.remove("is-covered");
+        };
+      });
+
       return this;
     };
   },

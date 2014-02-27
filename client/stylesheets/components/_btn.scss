@@ -1,0 +1,33 @@
+.btn {
+  @include transition(background 1s ease-in-out);
+  display: inline-block;
+  padding: 10px 13px;
+  color: #FFF;
+  font-family: Nitti, $helvetica;
+  font-weight: normal;
+  font-size: em(13);
+  line-height: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: $off-black;
+  border-radius: 3px;
+
+  &:hover {
+    @include transition(background 0s ease-in-out);
+    background: $orange;
+  }
+}
+
+@each $colour in $colours {
+  $name: nth($colour, 1);
+  $hex:  nth($colour, 2);
+
+  .btn--#{$name} {
+    background: $hex;
+
+    &:hover {
+      @include transition(background 0s ease-in-out);
+      background: shade($hex, 10%);
+    }
+  }
+}

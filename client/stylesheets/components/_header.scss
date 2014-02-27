@@ -1,22 +1,20 @@
 .header,
 .header--pinned {
   @include transition(top 0.25s ease-in-out);
-  background: #FFF;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 20;
-  height: 70px;
+  z-index: 60;
 }
 
 .header--unpinned {
-  top: -70px;
+  top: -78px;
 }
 
 .header__navigation {
   @include clearfix;
-  margin: 0 20px;
+  margin: 10px;
   padding: 0;
   list-style: none;
 }
@@ -25,16 +23,16 @@
   display: block;
   float: left;
   position: relative;
-
-  a {
-    display: block;
-    line-height: 70px;
-  }
+  padding: 10px 0 0 10px;
 }
 
-.header__brand {
-  font-family: $helvetica;
-  font-weight: 400;
-  font-size: em(24);
-  text-transform: uppercase;
+.header__navigation__menu {
+  @extend .header__navigation__item;
+  float: right;
+
+  .btn {
+    display: block;
+    float: left;
+    margin-left: 10px;
+  }
 }

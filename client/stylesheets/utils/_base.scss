@@ -8,16 +8,19 @@ body {
   padding: 0;
 
   &:before {
+    top: 0;
+    z-index: 500;
+
     @include media($palm) {
       width: auto;
       max-width: 100%;
-      margin: 0 30px;
+      margin: 0 20px;
     }
 
     @include media($tablet) {
       width: auto;
       max-width: 100%;
-      margin: 0 30px;
+      margin: 0 20px;
     }
 
     @include media($portable) {

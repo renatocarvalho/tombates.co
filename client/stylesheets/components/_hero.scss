@@ -1,12 +1,22 @@
 .hero {
   @include position(fixed, 0px 0px 0px 0px);
+  background-color: #FFF;
   background-position: center;
   background-size: cover;
+  z-index: 30;
+
+  &.is-covered {
+    display: none;
+
+    .hero__down {
+      display: none;
+    }
+  }
 }
 
 .hero__down {
   @include position(absolute, 0 20px 20px 0);
-  @include transition(background 0.25s ease-in-out);
+  @include transition(background 1s ease-in-out);
   cursor: pointer;
   display: block;
   width: 40px;
@@ -22,7 +32,8 @@
   }
 
   &:hover {
-    background: $red;
+    @include transition(background 0s ease-in-out);
+    background: $orange;
   }
 }
 

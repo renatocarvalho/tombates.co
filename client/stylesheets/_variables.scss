@@ -1,25 +1,38 @@
 @import "packages/neat-scss/neat-helpers";
 
 /* ==================================== */
-$palm:                     new-breakpoint(max-width 480px 3);
-$tablet:                   new-breakpoint(min-width 481px max-width 768px 8);
+$palm:                     new-breakpoint(max-width 580px 3);
+$tablet:                   new-breakpoint(min-width 581px max-width 768px 8);
 $portable:                 new-breakpoint(min-width 769px max-width 1024px 12);
 $desktop:                  new-breakpoint(min-width 1025px 12);
 
 $grid-columns:             12;
 $visual-grid:              false;
-$visual-grid-color:        rgba(0, 0, 0, 0.1);
+$visual-grid-color:        rgba(0, 0, 0, 0.3);
 $max-width:                960px;
 /* ==================================== */
 
 /* ==================================== */
-$off-black:                #17222A;
-$mid-grey:                 tint($off-black, 40%);
-$red:                      #ef3f3f;
-$blue:                     #1900FF;
+$off-black:                rgba(23, 34, 42, 1);
+$orange:                   rgba(239, 85, 53, 1);
+$red:                      rgba(242, 66, 70, 1);
+$green:                    rgba(52, 196, 124, 1);
+$black:                    rgba(0, 0, 0, 1);
 /* ==================================== */
 
 
 /* ==================================== */
-$museo:                   $helvetica;
+$colours: (
+  'black'                  $black,
+  'off-black'              $off-black,
+  'orange'                 $orange,
+  'red'                    $red,
+  'green'                  $green
+);
+/* ==================================== */
+
+
+/* ==================================== */
+$nitti:                    Nitti, $helvetica;
+$apercu:                   Apercu, $helvetica;
 /* ==================================== */

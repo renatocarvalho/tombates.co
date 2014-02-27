@@ -1,0 +1,31 @@
+.hacking-ants {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  height: 500px;
+
+  @include media($palm) {
+    height: auto;
+  }
+
+  canvas {
+    @include position(absolute, 0px 0px 0px 0px);
+    display: block;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+    background: #FFF;
+
+    @include media($palm) {
+      opacity: 0.5;
+    }
+  }
+}
+
+.hacking-ants__desc {
+  background: none;
+
+  @include media($palm) {
+    background: rgba(0, 0, 0, 0.05);
+  }
+}
