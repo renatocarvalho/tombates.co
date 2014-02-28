@@ -1,7 +1,6 @@
 .block {
   @include pad(70px 0);
   position: relative;
-  z-index: 40;
   background: #FFF;
 
   @include media($palm) {
@@ -13,6 +12,7 @@
   @extend .block;
   padding: 40px 20px;
   height: 500px;
+  background-color: #FFF;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

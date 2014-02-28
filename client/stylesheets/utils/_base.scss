@@ -3,6 +3,12 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.wrap {
+  position: relative;
+  z-index: 40;
+  background: #FFF;
+}
+
 body {
   margin: 0;
   padding: 0;
