@@ -10,7 +10,7 @@
 
 .block--image {
   @extend .block;
-  padding: 40px 20px;
+  padding: 40px 0;
   height: 500px;
   background-color: #FFF;
   background-size: cover;
@@ -58,10 +58,8 @@
 }
 
 .block__desc {
-  display: block;
   position: relative;
   z-index: 20;
-  width: 440px;
   background: rgba(255, 255, 255, 0.9);
   padding: 30px;
   border-radius: 3px;
@@ -74,10 +72,21 @@
     margin-bottom: 26px;
   }
 
+  @include media($desktop) {
+    @include span-columns(6 of 12);
+  }
+
+  @include media($portable) {
+    @include span-columns(8 of 12);
+  }
+
+  @include media($tablet) {
+    @include span-columns(6 of 8);
+  }
+
   @include media($palm) {
-    position: relative;
-    margin: 40px 20px;
-    width: auto;
+    @include span-columns(3 of 3);
+    margin: 40px 0;
   }
 }
 
