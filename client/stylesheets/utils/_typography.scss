@@ -65,7 +65,7 @@ h6, .u-h6 {}
 p, .u-text {
   margin: 15px 0;
   font-size: em(15);
-  line-height: 24px;
+  line-height: 26px;
 
   > a {
     @include transition(color 1s ease-in-out);

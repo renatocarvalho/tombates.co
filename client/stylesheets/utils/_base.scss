@@ -38,5 +38,10 @@ body {
       width: auto;
       max-width: 960px;
     }
+
+    @include media($large-desktop) {
+      width: auto;
+      max-width: 1200px;
+    }
   }
 }
