@@ -88,6 +88,10 @@
     @include span-columns(3 of 3);
     margin: 40px 0;
   }
+
+  @include media($large-desktop) {
+    @include span-columns(5 of 12);
+  }
 }
 
 
