@@ -1,0 +1,131 @@
+.information__intro {
+  h1 {
+    &:first-child { margin-top: 0; }
+    &:last-child { margin-bottom: 0; }
+  }
+
+  @include media($palm) {
+    @include span-columns(3 of 3);
+  }
+
+  @include media($tablet) {
+    @include span-columns(8 of 8);
+  }
+
+  @include media($portable) {
+    @include shift(0);
+    @include span-columns(8 of 12);
+  }
+
+  @include media($desktop) {
+    @include shift(0);
+    @include span-columns(8 of 12);
+  }
+
+  @include media($large-desktop) {
+    @include shift(0);
+    @include span-columns(6 of 12);
+  }
+}
+
+.information__lists {
+  @include span-columns(12 of 12);
+}
+
+.information__lists__item {
+  @include media($palm) {
+    @include span-columns(3 of 3);
+    @include pad(30px 0);
+    border-bottom: 1px solid tint($off-black, 15%);
+
+    &:first-child { padding-top: 0; }
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    > * { text-align: center; }
+  }
+
+  @include media($tablet) {
+    @include span-columns(8 of 8);
+    @include pad(30px 0);
+    border-bottom: 1px solid tint($off-black, 15%);
+
+    &:first-child { padding-top: 0; }
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    > * { text-align: center; }
+  }
+
+  @include media($portable) {
+    @include span-columns(4 of 12);
+  }
+
+  @include media($desktop) {
+    @include span-columns(4 of 12);
+  }
+}
+
+.information-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.information-list__item {
+  @include pad(10px 0);
+  position: relative;
+
+  &:after {
+    @include position(absolute, 0 0 0px 0px);
+    content: "";
+    display: block;
+    height: 1px;
+    width: 30px;
+    background: tint($off-black, 15%);
+
+    @include media($palm) {
+      @include position(absolute, 0 0 0px 50%);
+      @include transform(translateX(-50%));
+    }
+
+    @include media($tablet) {
+      @include position(absolute, 0 0 0px 50%);
+      @include transform(translateX(-50%));
+    }
+  }
+
+  &:last-child:after {
+    display: none;
+  }
+}
+
+.information-list__title {
+  color: tint($off-black, 50%);
+  margin-bottom: 10px;
+
+  > span {
+    color: #FFF;
+  }
+
+  > a {
+    @include transition(color 1s ease-in-out);
+    display: block;
+    color: $orange;
+    font-size: em(20, 16);
+
+    &:hover {
+      @include transition(color 0s ease-in-out);
+      color: #FFF;
+    }
+  }
+}
+
+.information-list__body {
+  color: tint($off-black, 50%);
+  margin-top: 0;
+}

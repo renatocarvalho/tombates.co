@@ -27,13 +27,13 @@
 
 .block--border {
   @extend .block;
-  border-top: 1px solid tint($off-black, 90%);
+  border-top: 1px solid tint($off-black, 95%);
 }
 
 .block--paddless { padding: 0; }
 
 .block__text {
-  h1 {
+  * {
     &:first-child { margin-top: 0; }
     &:last-child { margin-bottom: 0; }
   }
@@ -54,6 +54,11 @@
   @include media($desktop) {
     @include shift(2);
     @include span-columns(8 of 12);
+  }
+
+  @include media($large-desktop) {
+    @include shift(3);
+    @include span-columns(6 of 12);
   }
 }
 
@@ -99,8 +104,9 @@
   $name: nth($colour, 1);
   $hex:  nth($colour, 2);
 
-  .block-border--#{$name} {
+  .block--#{$name} {
     @extend .block;
-    border-top: 1px solid $hex;
+    color: #FFF;
+    background: $hex;
   }
 }

@@ -22,9 +22,9 @@ body {
 h1, .u-h1 {
   margin: 30px 0;
   font-family: $apercu;
-  font-size: em(24);
+  font-size: em(20);
   font-weight: 300;
-  line-height: 36px;
+  line-height: 32px;
   letter-spacing: -1px;
 
   a {
@@ -41,22 +41,24 @@ h1, .u-h1 {
 h2, .u-h2 {
   margin: 20px 0;
   font-family: $apercu;
-  font-size: em(22);
+  font-size: em(20);
   font-weight: 300;
   line-height: 28px;
-  letter-spacing: -1px;
 }
 
 h3, .u-h3 {
   margin: 20px 0;
   font-family: $apercu;
-  font-size: em(18);
+  font-size: em(16);
   font-weight: 300;
-  line-height: 15px;
-  letter-spacing: -1px;
+  line-height: 24px;
 }
 
-h4, .u-h4 {}
+h4, .u-h4 {
+  font-size: em(16);
+  font-weight: 300;
+  letter-spacing: -1px;
+}
 
 h5, .u-h5 {}
 
@@ -64,8 +66,9 @@ h6, .u-h6 {}
 
 p, .u-text {
   margin: 15px 0;
-  font-size: em(15);
-  line-height: 26px;
+  font-size: em(14);
+  line-height: 24px;
+  letter-spacing: -1px;
 
   > a {
     @include transition(color 1s ease-in-out);
@@ -78,6 +81,24 @@ p, .u-text {
     }
   }
 }
+
+.u-text-centered { text-align: center; }
+
+.u-text-border {
+  border-bottom: 2px solid #FFF;
+}
+
+@each $colour in $colours {
+  $name: nth($colour, 1);
+  $hex:  nth($colour, 2);
+
+  .u-text-border--#{$name} {
+    padding-bottom: 2px;
+    border-bottom: 1px solid tint($hex, 15%);
+  }
+
+}
+
 
 blockquote, .u-quote {}
 

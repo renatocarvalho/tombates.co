@@ -7,7 +7,7 @@
   border-top: 1px solid tint($off-black, 95%);
 
   @include media($palm) {
-    padding: 30px 0;
+    padding: 50px 0;
   }
 }
 
@@ -32,7 +32,7 @@
   }
 
   @include media($palm) {
-    @include span-columns(2 of 3);
+    @include span-columns(3 of 4);
     margin-top: 30px;
 
     &:first-child { margin-top: 0; }

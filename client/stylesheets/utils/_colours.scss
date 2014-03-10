@@ -1,0 +1,9 @@
+@each $colour in $colours {
+  $name: nth($colour, 1);
+  $hex:  nth($colour, 2);
+
+  .u-bg--#{$name} {
+    color: #FFF;
+    background: $hex;
+  }
+}
