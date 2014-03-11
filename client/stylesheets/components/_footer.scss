@@ -4,7 +4,7 @@
   background: #FFF;
   z-index: 30;
   padding: 60px 0;
-  border-top: 1px solid tint($off-black, 95%);
+  // border-top: 1px solid tint($off-black, 95%);
 
   @include media($palm) {
     padding: 50px 0;

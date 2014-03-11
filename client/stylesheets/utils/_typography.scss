@@ -1,5 +1,4 @@
 /* ==================================== */
-@include font-face(Nitti, '/webfonts/nitti-base-px-normal', normal);
 @include font-face(Nitti, '/webfonts/nitti-basic-px-light', 300);
 /* ==================================== */
 
@@ -106,8 +105,15 @@ p, .u-text {
     border-bottom: 1px solid tint($hex, 15%);
   }
 
+  .u-text--#{$name} {
+    color: $hex;
+  }
+
 }
 
+.u-text--grey {
+  color: tint($off-black, 60%);
+}
 
 blockquote, .u-quote {}
 

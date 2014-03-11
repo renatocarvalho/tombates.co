@@ -1,5 +1,5 @@
 .information__intro {
-  h1 {
+  > * {
     &:first-child { margin-top: 0; }
     &:last-child { margin-bottom: 0; }
   }
@@ -21,11 +21,6 @@
     @include shift(0);
     @include span-columns(8 of 12);
   }
-
-  @include media($large-desktop) {
-    @include shift(0);
-    @include span-columns(6 of 12);
-  }
 }
 
 .information__lists {
@@ -34,8 +29,6 @@
 
 .information__lists__item {
   @include pad(70px 0);
-  // border-left: 1px solid tint($off-black, 5%);
-  // border-right: 1px solid tint($off-black, 5%);
 
   > h2 { margin-top: 0; }
 
@@ -152,4 +145,16 @@
 .information-list__body {
   color: tint($off-black, 50%);
   margin: 0;
+}
+
+.info-short {
+  width: 65%;
+
+  @include media($tablet) {
+    width: 70%;
+  }
+
+  @include media($palm) {
+    width: 100%;
+  }
 }

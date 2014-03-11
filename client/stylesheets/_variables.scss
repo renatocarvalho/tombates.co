@@ -1,14 +1,14 @@
 @import "packages/neat-scss/neat-helpers";
+@import "packages/bourbon-scss/bourbon";
 
 /* ==================================== */
 $palm:                     new-breakpoint(max-width 420px 3);
 $tablet:                   new-breakpoint(min-width 421px max-width 768px 8);
 $portable:                 new-breakpoint(min-width 769px max-width 1024px 12);
 $desktop:                  new-breakpoint(min-width 1025px 12);
-$large-desktop:            new-breakpoint(min-width 1280px 12);
 
 $grid-columns:             12;
-$visual-grid:              false;
+$visual-grid:              true;
 $visual-grid-color:        rgba(0, 0, 0, 0.3);
 $max-width:                1200px;
 $gutter:                   3em;
@@ -21,7 +21,7 @@ $red:                      rgba(242, 66, 70, 1);
 $green:                    rgba(52, 196, 124, 1);
 $black:                    rgba(0, 0, 0, 1);
 $moo-blue:                 rgba(0, 162, 220, 1);
-$purple:                   rgba(132, 52, 188, 1);
+$purple:                   rgba(156, 92, 201, 1);
 /* ==================================== */
 
 
@@ -40,6 +40,5 @@ $colours: (
 
 /* ==================================== */
 $nitti:                    Nitti, $helvetica;
-$apercu-light:                   "Apercu Light", $helvetica;
-$apercu-regular:                   "Apercu Regular", $helvetica;
+$apercu-light:             "Apercu Light", $helvetica;
 /* ==================================== */
