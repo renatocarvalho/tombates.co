@@ -12,17 +12,24 @@
       display: none;
     }
   }
+
+  @include media($tablet) {
+    @include position(absolute, 0px 0px 0px 0px);
+  }
+
+  @include media($palm) {
+    @include position(absolute, 0px 0px 0px 0px);
+  }
 }
 
 .hero__down {
   @include position(absolute, 0 20px 20px 0);
   @include transition(background 1s ease-in-out);
-  cursor: pointer;
   display: block;
   width: 40px;
   height: 40px;
   border-radius: 3px;
-  background: $off-black;
+  background: $orange;
 
   &:after {
     @include triangle(15px, #FFF, down);

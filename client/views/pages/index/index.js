@@ -2,9 +2,11 @@ _.extend(Template.index, {
   created: function() {
     this.setFirstBlockMargin = function setFirstBlockMargin() {
       var block = document.querySelector(".block[data-margin]"),
-        windowHeight = window.innerHeight + "px";
+          windowHeight = window.innerHeight + "px";
 
-      block.style.marginTop = windowHeight;
+      if (block) {
+        block.style.marginTop = windowHeight;
+      }
 
       return this;
     };

@@ -1,10 +1,4 @@
 /* ==================================== */
-@include font-face(Apercu, '/webfonts/apercu_light-webfont', 300);
-@include font-face(Apercu, '/webfonts/apercu_medium-webfont', normal);
-/* ==================================== */
-
-
-/* ==================================== */
 @include font-face(Nitti, '/webfonts/nitti-base-px-normal', normal);
 @include font-face(Nitti, '/webfonts/nitti-basic-px-light', 300);
 /* ==================================== */
@@ -21,9 +15,9 @@ body {
 
 h1, .u-h1 {
   margin: 30px 0;
-  font-family: $apercu;
+  font-family: $apercu-light;
   font-size: em(20);
-  font-weight: 300;
+  font-weight: 200;
   line-height: 32px;
   letter-spacing: -1px;
 
@@ -40,18 +34,18 @@ h1, .u-h1 {
 
 h2, .u-h2 {
   margin: 20px 0;
-  font-family: $apercu;
+  font-family: $apercu-light;
   font-size: em(20);
-  font-weight: 300;
+  font-weight: 200;
   line-height: 28px;
 }
 
 h3, .u-h3 {
   margin: 20px 0;
-  font-family: $apercu;
+  font-family: $apercu-light;
   font-size: em(16);
-  font-weight: 300;
-  line-height: 24px;
+  font-weight: 200;
+  line-height: 28px;
 }
 
 h4, .u-h4 {
@@ -63,6 +57,8 @@ h4, .u-h4 {
 h5, .u-h5 {}
 
 h6, .u-h6 {}
+
+
 
 p, .u-text {
   margin: 15px 0;
@@ -80,6 +76,19 @@ p, .u-text {
       color: tint($off-black, 75%);
     }
   }
+}
+
+.u-text-large {
+  @extend p;
+  margin: 20px 0;
+  font-size: em(16);
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+
+.u-text-small {
+  color: tint($off-black, 50%);
+  font-size: em(13);
 }
 
 .u-text-centered { text-align: center; }
