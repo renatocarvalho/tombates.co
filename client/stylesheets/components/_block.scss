@@ -36,6 +36,13 @@
   }
 }
 
+.block--stripe {
+  @extend .block--image;
+  @include pad(0px);
+  position: relative;
+  height: 65px;
+}
+
 .block--border {
   @extend .block;
   border-top: 1px solid tint($off-black, 95%);
