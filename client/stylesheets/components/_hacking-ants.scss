@@ -23,7 +23,7 @@
 }
 
 .hacking-ants__desc {
-  background: #F0F0F0;
+  background: rgba(0, 0, 0, 0.05);
 
   @include media($palm) {
     background: rgba(0, 0, 0, 0.05);
