@@ -1,74 +1,16 @@
 .hero {
-  @include position(fixed, 0px 0px 0px 0px);
+  @include position(fixed, 0px 0px 0 0px);
+  height: 500px;
   background-color: #FFF;
   background-position: center;
   background-size: cover;
   z-index: 30;
 
-  &.is-covered {
-    display: none;
-
-    .hero__down {
-      display: none;
-    }
-  }
-
   @include media($tablet) {
     @include position(absolute, 0px 0px 0px 0px);
   }
 
   @include media($palm) {
     @include position(absolute, 0px 0px 0px 0px);
-  }
-}
-
-.hero__down {
-  @include position(absolute, 0 20px 20px 0);
-  @include transition(background 1s ease-in-out);
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 3px;
-  background: $orange;
-
-  &:after {
-    @include triangle(15px, #FFF, down);
-    @include position(absolute, 50% 0 0 50%);
-    @include transform( translateX(-50%) translateY(-25%) );
-    content: "";
-  }
-
-  &:hover {
-    @include transition(background 0s ease-in-out);
-    background: $orange;
-  }
-}
-
-.hero__inner {
-  @include transform( translateX(-50%) translateY(-50%) );
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  @include media($palm) {
-    width: auto;
-    width: 100%;
-    margin: 0 30px;
-  }
-
-  @include media($tablet) {
-    width: auto;
-    width: 100%;
-    padding: 0 30px;
-  }
-
-  @include media($portable) {
-    width: auto;
-    width: 740px;
-  }
-
-  @include media($desktop) {
-    width: auto;
-    width: 960px;
   }
 }

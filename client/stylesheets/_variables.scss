@@ -2,10 +2,10 @@
 @import "packages/bourbon-scss/bourbon";
 
 /* ==================================== */
-$palm:                     new-breakpoint(max-width 420px 3);
-$tablet:                   new-breakpoint(min-width 421px max-width 768px 8);
-$portable:                 new-breakpoint(min-width 769px max-width 1024px 12);
-$desktop:                  new-breakpoint(min-width 1025px 12);
+$palm:                     new-breakpoint(max-width 540px 3);
+$tablet:                   new-breakpoint(min-width 541px max-width 768px 8);
+$portable:                 new-breakpoint(min-width 769px max-width 1120px 12);
+$desktop:                  new-breakpoint(min-width 1121px 12);
 
 $grid-columns:             12;
 $visual-grid:              true;
@@ -40,5 +40,7 @@ $colours: (
 
 /* ==================================== */
 $nitti:                    Nitti, $helvetica;
-$apercu-light:             "Apercu Light", $helvetica;
+
+$maison-book:              "Maison Neue Book", $helvetica;
+$maison-medium:            "Maison Neue Medium", Georgia;
 /* ==================================== */

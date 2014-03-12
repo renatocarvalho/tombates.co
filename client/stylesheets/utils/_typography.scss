@@ -4,53 +4,43 @@
 
 
 body {
-  color: $off-black;
-  font-family: $nitti;
+  color: tint($off-black, 10%);
+  font-family: $maison-book;
   font-weight: 300;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 28px;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, .u-h1 {
   margin: 30px 0;
-  font-family: $apercu-light;
-  font-size: em(20);
-  font-weight: 200;
-  line-height: 32px;
-  letter-spacing: -1px;
-
-  a {
-    @include transition(color 1s ease-in-out);
-    color: $orange;
-
-    &:hover {
-      @include transition(color 0s ease-in-out);
-      color: tint($off-black, 75%);
-    }
-  }
+  font-family: $maison-book;
+  font-size: em(24);
+  font-weight: 300;
+  line-height: 36px;
 }
 
 h2, .u-h2 {
   margin: 20px 0;
-  font-family: $apercu-light;
+  font-family: $maison-medium;
   font-size: em(20);
-  font-weight: 200;
+  font-weight: 500;
   line-height: 28px;
 }
 
 h3, .u-h3 {
   margin: 20px 0;
-  font-family: $apercu-light;
-  font-size: em(16);
-  font-weight: 200;
+  font-family: $maison-book;
+  font-size: em(18);
+  font-weight: 300;
   line-height: 28px;
 }
 
 h4, .u-h4 {
-  font-size: em(16);
+  font-family: $maison-book;
+  font-size: em(15);
+  line-height: 27px;
   font-weight: 300;
-  letter-spacing: -1px;
 }
 
 h5, .u-h5 {}
@@ -60,10 +50,9 @@ h6, .u-h6 {}
 
 
 p, .u-text {
-  margin: 15px 0;
-  font-size: em(14);
-  line-height: 24px;
-  letter-spacing: -1px;
+  margin: 20px 0;
+  font-size: em(16);
+  line-height: 27px;
 
   > a {
     @include transition(color 1s ease-in-out);
@@ -78,16 +67,23 @@ p, .u-text {
 }
 
 .u-text-large {
-  @extend p;
   margin: 20px 0;
   font-size: em(16);
-  line-height: 24px;
-  letter-spacing: -1px;
+  line-height: 32px;
 }
 
 .u-text-small {
-  color: tint($off-black, 50%);
-  font-size: em(13);
+  font-size: em(14);
+}
+
+.u-text-light {
+  font-family: $maison-book;
+  font-weight: 300;
+}
+
+.u-text-medium {
+  font-family: $maison-medium;
+  font-weight: 500;
 }
 
 .u-text-centered { text-align: center; }
@@ -112,7 +108,7 @@ p, .u-text {
 }
 
 .u-text--grey {
-  color: tint($off-black, 60%);
+  color: tint($off-black, 40%);
 }
 
 blockquote, .u-quote {}
@@ -132,6 +128,12 @@ ol, .u-ordered-list {
 }
 
 a {
-  color: inherit;
+  @include transition(color 1s ease-in-out);
+  color: $orange;
   text-decoration: none;
+
+  &:hover {
+    @include transition(color 0s ease-in-out);
+    color: tint($off-black, 75%);
+  }
 }
