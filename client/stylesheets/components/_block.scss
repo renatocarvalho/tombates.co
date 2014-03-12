@@ -26,6 +26,10 @@
 
 .block--margin-top {
   margin-top: 500px;
+
+  @include media($palm) {
+    margin-top: 300px;
+  }
 }
 
 .block--stripe {

@@ -11,6 +11,6 @@
   }
 
   @include media($palm) {
-    @include position(absolute, 0px 0px 0px 0px);
+    height: 300px;
   }
 }
