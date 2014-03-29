@@ -2,7 +2,6 @@
   "packages": {
     "scss": {},
     "neat-scss": {},
-    "iron-router": {},
-    "GAnalytics": {}
+    "iron-router": {}
   }
 }
