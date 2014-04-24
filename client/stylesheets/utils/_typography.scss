@@ -45,7 +45,17 @@ h4, .u-h4 {
 
 h5, .u-h5 {}
 
-h6, .u-h6 {}
+h6, .u-h6 {
+  font-family: $maison-book;
+  font-size: em(14, 16);
+  line-height: 18px;
+  font-weight: 300;
+  color: tint($off-black, 60%);
+
+  a {
+    font-family: $maison-medium;
+  }
+}
 
 
 
@@ -111,7 +121,20 @@ p, .u-text {
   color: tint($off-black, 40%);
 }
 
-blockquote, .u-quote {}
+blockquote, .u-quote {
+  margin: 40px 0;
+
+  p {
+    padding-left: 30px;
+    color: tint($off-black, 35%);
+    border-left: 3px solid $orange;
+  }
+
+  h6 {
+    margin-left: 30px;
+    // text-align: right;
+  }
+}
 
 code, .u-code {}
 

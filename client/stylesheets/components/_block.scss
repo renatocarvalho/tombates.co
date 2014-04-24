@@ -24,6 +24,32 @@
   }
 }
 
+.block--of-images {
+  @include clearfix;
+  @extend .block;
+  padding: 0;
+
+  .block__image {
+    display: block;
+    float: left;
+    width: 25%;
+    overflow: hidden;
+
+    > img {
+      display: block;
+      width: 100%;
+    }
+
+    @include media($tablet) {
+      width: 50%;
+    }
+
+    @include media($palm) {
+      width: 50%;
+    }
+  }
+}
+
 .block--margin-top {
   margin-top: 500px;
 
@@ -47,7 +73,7 @@
 .block--paddless { padding: 0; }
 
 .block__text {
-  * {
+  > * {
     &:first-child { margin-top: 0; }
     &:last-child { margin-bottom: 0; }
   }

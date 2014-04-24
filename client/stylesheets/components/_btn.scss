@@ -9,6 +9,30 @@
   line-height: 14px;
   background: $off-black;
   border-radius: 3px;
+  text-decoration: none;
+
+  &:hover {
+    @include transition(background 0s ease-in-out);
+    background: $orange;
+    color: #FFF;
+  }
+}
+
+.btn--cta {
+  @include transition(background 1s ease-in-out);
+  display: block;
+  width: 250px;
+  padding: 20px 0;
+  text-align: center;
+  color: #FFF;
+  font-family: $maison-medium;
+  font-weight: 500;
+  font-size: em(20);
+  line-height: 14px;
+  background: $off-black;
+  border-radius: 3px;
+  text-decoration: none;
+  margin: 50px auto 0;
 
   &:hover {
     @include transition(background 0s ease-in-out);
