@@ -1,5 +1,7 @@
 # tombates.co
 
+# This repo is probably totally fucked up due to changes in Meteor. Not sure, how reliable using it will be. Need to get my portfolio updated soon. So will fix. Probably. Maybe.
+
 ## Running locally
 
 Install meteor.js
