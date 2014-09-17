@@ -17,7 +17,7 @@ $ sudo -H npm install -g meteorite
 Clone this repository
 
 ``` sh
-$ git clone https://github.com/yoamomonstruos/ustwo-meteor.git
+$ git clone https://github.com/yoamomonstruos/tombates.co.git
 ```
 
 Navigate to directory and run meteor/meteorite
