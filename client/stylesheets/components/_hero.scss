@@ -1,5 +1,5 @@
 .hero {
-  @include position(fixed, 0px 0px 0 0px);
+  @include position(fixed, 0px 0px null 0px);
   height: 500px;
   background-color: #FFF;
   background-position: center;

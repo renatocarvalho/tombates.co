@@ -85,7 +85,7 @@
   }
 
   &:after {
-    @include position(absolute, 0 0 0px 0px);
+    @include position(absolute, null null 0px 0px);
     content: "";
     display: block;
     height: 1px;
@@ -93,12 +93,12 @@
     background: tint($off-black, 15%);
 
     @include media($palm) {
-      @include position(absolute, 0 0 0px 50%);
+      @include position(absolute, null null 0px 50%);
       @include transform(translateX(-50%));
     }
 
     @include media($tablet) {
-      @include position(absolute, 0 0 0px 50%);
+      @include position(absolute, null null 0px 50%);
       @include transform(translateX(-50%));
     }
   }

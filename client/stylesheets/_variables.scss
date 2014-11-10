@@ -1,5 +1,7 @@
-@import "packages/neat-scss/neat-helpers";
-@import "packages/bourbon-scss/bourbon";
+@import ".meteor/local/build/programs/server/assets/packages/bstocks_neat/neat-helpers";
+@import ".meteor/local/build/programs/server/assets/packages/bstocks_bourbon/bourbon";
+
+$disable-warnings: true;
 
 /* ==================================== */
 $palm:                     new-breakpoint(max-width 540px 3);

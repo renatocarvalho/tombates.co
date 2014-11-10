@@ -1,9 +1,9 @@
 @charset "utf-8";
 
 /* ==================================== */
-@import "packages/bourbon-scss/bourbon";
+@import ".meteor/local/build/programs/server/assets/packages/bstocks_bourbon/bourbon";
 @import "variables";
-@import "packages/neat-scss/neat";
+@import ".meteor/local/build/programs/server/assets/packages/bstocks_neat/neat";
 /* ==================================== */
 
 /* ==================================== */
