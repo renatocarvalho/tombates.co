@@ -35,8 +35,8 @@ gulp.task('watch:assets', function () {
   gulp.watch('_assets/css/**/*.css', [ 'process:css' ]);
   gulp.watch('_assets/images/**/*', ['process:images']);
   gulp.watch('_assets/js/**/*', ['process:es6']);
-  
-  gulp.watch(['_posts/**/*', '_layouts/**/*', '_partials/**/*', '_data/**/*'], ['build:posts']);
+
+  gulp.watch(['_pages/**/*', '_layouts/**/*', '_partials/**/*', '_data/**/*'], ['build:pages']);
 });
 
 // Running
