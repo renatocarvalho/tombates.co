@@ -52,4 +52,4 @@ gulp.task('run:gulp', ['clean:assets'], function () {
 });
 
 // Default Command
-gulp.task('default', ['run:gulp']);
+gulp.task('default', ['deploy:github']);
