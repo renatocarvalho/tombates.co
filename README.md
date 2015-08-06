@@ -93,4 +93,3 @@ $ gulp deploy:github
 [20:17:23] [gh-pages] Committing "Update 2015-05-28T23:17:14.307Z"
 [20:17:23] [gh-pages] Pushing to remote.
 [20:17:26] Finished 'deploy:github' after 12 s
-```
