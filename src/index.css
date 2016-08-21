@@ -1,0 +1,176 @@
+html {
+  font-size: 13px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f1018;
+  color: white;
+  line-height: 1.65;
+  margin: 0;
+  padding: 0;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+
+button {
+  cursor: pointer;
+  display: block;
+  color: #6b46ae;
+  border: 1px solid currentColor;
+  background: transparent;
+  font-size: 1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 3px;
+  transition: color 0.3s ease;
+}
+
+button:hover {
+  color: white;
+}
+
+button[disabled],
+button[disabled]:hover {
+  color: #6b46ae;
+  opacity: 0.4;
+}
+
+a {
+  position: relative;
+  color: #6b46ae;
+  text-decoration: undeline;
+}
+
+a:hover { color: #3d2b63; }
+
+.measure { max-width: 34em; }
+
+.section { margin: 64px; }
+
+.section > *:last-child {
+  margin-bottom: 0;
+}
+
+.time { opacity: 0.3; }
+
+ul {
+  display: table;
+  border-collapse: collapse;
+  list-style: none;
+  clear: left;
+}
+
+li {
+  /*color: white !important;*/
+  display: table-row;
+}
+
+li em {
+  opacity: 0.5;
+}
+
+li > div {
+  display: table-cell;
+  padding-bottom: 24px;
+}
+
+li > div:first-child {
+  padding-right: 24px;
+  min-width: 120px;
+}
+
+li > div *:last-child { margin-bottom: 0; }
+
+dt { font-weight: 600; }
+dt::before { content: '- '; }
+
+dd { margin-bottom: 24px; }
+
+.count {
+  color: #6b46ae;
+  border-radius: 3px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.filters > .filter {
+  margin-right: 24px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.filter-checkbox { display: none; }
+
+.filter-span {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  line-height: 11px;
+  color: currentColor;
+  text-indent: calc(15px + 4px);
+  transition: opacity 0.3s ease-in-out;
+  outline: 0;
+}
+
+.filter-span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: currentColor;
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+}
+
+.filter-checkbox[type=checkbox]:not(:checked) + .filter-span { opacity: 0.35; }
+.filter-checkbox[type=checkbox]:not(:checked) + .filter-span:hover { opacity: 0.5; }
+
+.api,
+.api a {
+  color: #6b46ae;
+}
+
+.swarm,
+.swarm a {
+  color: #f06d1f;
+}
+
+.twitter,
+.twitter a {
+  color: #1da1f2;
+}
+
+.github,
+.github a {
+  color: #999999;
+}
+
+.instagram,
+.instagram a {
+  color: #405de6;
+}
+
+.dribbble,
+.dribbble a {
+  color: #ea4c89;
+}
