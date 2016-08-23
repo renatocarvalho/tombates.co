@@ -1,0 +1,50 @@
+.filters {
+  display: flex;
+  float: left;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.filters > .filter {
+  margin-right: 24px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.filters > .filter:last-child { margin-right: 0; }
+
+.filter-checkbox { display: none; }
+
+.filter-span {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  line-height: 11px;
+  color: currentColor;
+  text-indent: calc(15px + 4px);
+  transition: opacity 0.3s ease-in-out;
+  outline: 0;
+}
+
+.filter-span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: currentColor;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+.filter-checkbox[type=checkbox]:not(:checked) + .filter-span { opacity: 0.35; }
+.filter-checkbox[type=checkbox]:not(:checked) + .filter-span:hover { opacity: 0.5; }
+
+.filter-label.api { color: var(--api); }
+.filter-label.swarm { color: var(--swarm); }
+.filter-label.twitter { color: var(--twitter); }
+.filter-label.github { color: var(--github); }
+.filter-label.instagram { color: var(--instagram); }
+.filter-label.dribbble { color: var(--dribbble); }

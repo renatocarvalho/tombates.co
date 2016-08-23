@@ -1,0 +1,37 @@
+.indicator {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: currentColor;
+  border-radius: 50%;
+}
+
+.api a,
+.api .indicator {
+  color: var(--api);
+}
+
+.swarm a,
+.swarm .indicator {
+  color: var(--swarm);
+}
+
+.twitter a,
+.twitter .indicator {
+  color: var(--twitter);
+}
+
+.github a,
+.github .indicator {
+  color: var(--github);
+}
+
+.instagram a,
+.instagram .indicator {
+  color: var(--instagram);
+}
+
+.dribbble a,
+.dribbble .indicator {
+  color: var(--dribbble);
+}
