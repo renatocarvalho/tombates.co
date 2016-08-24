@@ -36,17 +36,19 @@ export default class Changelog extends Component {
   renderLog () {
     const { isFetching, counts, list } = this.props;
 
-    return list.map((item, index) => {
-      return (
-        <li className={ item.source.toLowerCase() } key={index}>
-          <div>
-            <span className="indicator"></span>
-          </div>
-          <div className="time">{moment(item.createdAt).fromNow()}</div>
-          <div className="measure" dangerouslySetInnerHTML={{ __html: markdown.toHTML(item.body) }}></div>
-        </li>
-      )
-    })
+    return <ul>
+      { list.map((item, index) => {
+        return (
+          <li className={ item.source.toLowerCase() } key={index}>
+            <div>
+              <span className="indicator"></span>
+            </div>
+            <div className="time">{moment(item.createdAt).fromNow()}</div>
+            <div className="measure" dangerouslySetInnerHTML={{ __html: markdown.toHTML(item.body) }}></div>
+          </li>
+        )
+      }) }
+    </ul>;
   }
 
   render () {

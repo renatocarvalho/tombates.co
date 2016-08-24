@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background: #24252d;
+  background: #15161d;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.65;
   margin: 0;
@@ -60,8 +60,9 @@ a:hover { text-decoration: underline; }
 
 .section { margin: 64px; }
 
-@media (max-width: 800px) {
-  .section { margin: 36px; }
+@media (max-width: 600px) {
+  .time { display: none; }
+  .section { margin: 48px 24px; }
 }
 
 .section > *:last-child { margin-bottom: 0; }
